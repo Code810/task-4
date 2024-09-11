@@ -12,6 +12,8 @@ import AddProducts from '../Page/Admin/Addproducts'
 import Login from '../Page/Site/Login'
 import SignUp from '../Page/Site/SignUp'
 import ProtectedRoute from './protectedRoute'
+import Basket from '../Page/Site/Basket'
+import Wishlist from '../Page/Site/wishlist'
 
 const AppRoutes = () => {
   return (
@@ -20,6 +22,8 @@ const AppRoutes = () => {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="basket" element={<Basket />} />
+        <Route path="wishlist" element={<Wishlist />} />
         {/* <Route path="products" element={<Products />} /> */}
         <Route
           path="products"

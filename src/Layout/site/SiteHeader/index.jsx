@@ -13,6 +13,8 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { useNavigate } from 'react-router-dom';
+import { FaShoppingBasket,FaHeart  } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 const HeaderSite = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -149,7 +151,8 @@ const HeaderSite = () => {
               </Button>
             ))}
           </Box>
-
+          <Link to={"/basket"} style={{color:"white"}}><FaShoppingBasket className='mx-3' style={{fontSize: `25px`}}/></Link>
+          <Link to={"/wishlist"} style={{color:"red"}}><FaHeart  className='mx-3' style={{fontSize: `25px`}}/></Link>
           {token && (
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
